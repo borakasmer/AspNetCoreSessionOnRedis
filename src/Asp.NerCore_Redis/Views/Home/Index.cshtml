@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<head>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+<div class="container">
+    <div class="jumbotron">
+        <h2>ASP.NET Core Mvc'de</h2>
+        <h2>Session bilgisini Redis'de Saklama</h2>
+    </div>
+    <div>
+        <form id="myform" action="Home/Index" method="post">
+
+            <table class="table table-responsive">
+                <tr>
+                    <td>
+                        <b>Kullanıcı Adı:</b>
+                    </td>
+                    <td><input type="text" name="UserName" /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>TCKN:</b>
+                    </td>
+                    <td><input type="text" name="UserID" />&nbsp;&nbsp;&nbsp;<input type="submit" value="Gönder"/></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
